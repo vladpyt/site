@@ -4,6 +4,6 @@ from django.db import models
 from django . db import models
 class Product(models.Model):
     name = models.CharField(max_length=120)
-    descript = models.CharField(max_length=128)
+    descript = models.TextField()
     price = models.IntegerField()
     image_url = models.CharField(max_length=256)
