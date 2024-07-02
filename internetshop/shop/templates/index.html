@@ -1,61 +1,49 @@
-<style>
-    * {
-        ont-family: Arial
-    }
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}"/>
 
-    img {
-        max-width: 300px;
-        max-height: 300px;
-        border-radius: 30px;
 
-    }
-
-    .product {
-        background-color: #32666F;
-        display: flex;
-        border: 5px solid #32666F;
-        margin-top: 10px;
-        border-radius: 30px;
-        padding: 15px;
-    }
-
-    .heading {
-        display: flex;
-        align-items: center;
-    }
-
-    a {
-        margin-top: 10px;
-    }
-
-    button {
-         background-color: #9AA8AB;
-         border: none;
-    }
-</style>
 <div class="heading">
-    <h1 style="color: #32666F;">АнтиМаг</h1>
 
-    <a href="/">Главная</a>
-    <a href="product">Продукция</a>
-    <a href="akchuya">Акция</a>
+    <h1 class="logo">АнтиМаг</h1>
+
+    <div class="nav">
+        <a href="/">Главная</a>
+        <a href="product">Продукция</a>
+        <a href="akchuya">Акция</a>
+    </div>
 
 </div>
 
-<div class="product">
-    <img src="https://images.uzum.uz/co9671sqk7bc30trm5s0/t_product_540_high.jpg">
-    <div >
-        <h2>Зубная щетка</h2>
-        <p>Зубна́я щётка — основной инструмент для удаления мягких отложений с поверхности зубов и дёсен. Как правило, применяется с использованием зубной пасты.</p>
-    </div>
-    <button>Buy</button>
-</div>
+<div class="productlist">
 
-<div class="product">
-    <img src="https://cdn.tveda.ru/thumbs/db1/db1672abf59a61528878954069d78d8b/d80c8f436673eaf69a945d2955c44b38.jpg">
-    <div>
-        <h2>Помидор</h2>
-        <p>Тома́т или помидо́р — однолетнее или многолетнее травянистое растение, вид рода Паслён семейства Паслёновые. Возделывается как овощная культура; выращивается ради съедобных плодов — сочных многогнёздных ягод различной формы и окраски, также называемых томатами или помидорами.</p>
+    <div class="product">
+
+        <img src="{% static 'ot.jpg' %}">
+        <div class="text">
+            <h2>Зубная щетка</h2>
+            <p>Зубна́я щётка — основной инструмент для удаления мягких отложений с поверхности зубов и дёсен. Как правило, применяется с использованием зубной пасты.</p>
+        </div>
+
+        <div class="priceSection">
+            <h3>2000 pуб</h3>
+            <button>Buy</button>
+        </div>
+
     </div>
-    <button>Buy</button>
+
+    <div class="product">
+
+        <img src="https://cdn.tveda.ru/thumbs/db1/db1672abf59a61528878954069d78d8b/d80c8f436673eaf69a945d2955c44b38.jpg">
+        <div class="text">
+            <h2>Помидор</h2>
+            <p >Помидо́р — однолетнее или многолетнее травянистое растение, вид рода Паслён семейства Паслёновые. Возделывается как овощная культура; выращивается ради съедобных плодов — сочных многогнёздных ягод различной формы и окраски, также называемых томатами или помидорами.</p>
+        </div>
+
+        <div class="priceSection">
+            <h3>2000 pуб</h3>
+            <button class=".button">Buy</button>
+        </div>
+
+    </div>
+
 </div>
