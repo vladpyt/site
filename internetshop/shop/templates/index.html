@@ -20,33 +20,17 @@
 
     <div class="product">
 
-        <img src="{% static 'ot.jpg' %}">
+        <img src="{{  product.image_url  }}">
         <div class="text">
-            <h2>Зубная щетка</h2>
-            <p>Зубна́я щётка — основной инструмент для удаления мягких отложений с поверхности зубов и дёсен. Как правило, применяется с использованием зубной пасты.</p>
+            <h2>{{  product.name  }}</h2>
+            <p>{{  product.descript  }}</p>
         </div>
 
         <div class="priceSection">
-            <h3>2000 pуб</h3>
+            <h3>{{  product.price }} pуб</h3>
             <button>Беру!</button>
             <button>Пока ещё думаю...</button>
         </div>
 
     </div>
     {% endfor %}
-<!--    <div class="product">
-
-        <img src="https://cdn.tveda.ru/thumbs/db1/db1672abf59a61528878954069d78d8b/d80c8f436673eaf69a945d2955c44b38.jpg">
-        <div class="text">
-            <h2>Помидор</h2>
-            <p >Помидо́р — однолетнее или многолетнее травянистое растение, вид рода Паслён семейства Паслёновые. Возделывается как овощная культура; выращивается ради съедобных плодов — сочных многогнёздных ягод различной формы и окраски, также называемых томатами или помидорами.</p>
-        </div>
-
-        <div class="priceSection">
-            <h3>2000 pуб</h3>
-            <button>Беру!</button>
-        </div>
-
-    </div>
-
-</div> -->
