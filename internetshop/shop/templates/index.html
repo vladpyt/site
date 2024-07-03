@@ -4,7 +4,9 @@
 
 <div class="heading">
 
-    <h1 class="logo">АнтиМаг</h1>
+    <div class="logo">
+        <h1>АнтиМаг</h1>
+    </div>
 
     <div class="nav">
         <a href="/">Главная</a>
@@ -13,7 +15,7 @@
     </div>
 
 </div>
-
+    {% for product in products %}
 <div class="productlist">
 
     <div class="product">
@@ -27,11 +29,12 @@
         <div class="priceSection">
             <h3>2000 pуб</h3>
             <button>Беру!</button>
+            <button>Пока ещё думаю...</button>
         </div>
 
     </div>
-
-    <div class="product">
+    {% endfor %}
+<!--    <div class="product">
 
         <img src="https://cdn.tveda.ru/thumbs/db1/db1672abf59a61528878954069d78d8b/d80c8f436673eaf69a945d2955c44b38.jpg">
         <div class="text">
@@ -46,4 +49,4 @@
 
     </div>
 
-</div>
+</div> -->
