@@ -28,14 +28,14 @@
     color: white;
 }
 
-a {
+.nav {
     margin-left: 30px;
     text-decoration: none;
     color: #a3a3a3;
     font-size: 22px;
 }
 
-a:hover {
+.nav:hover {
     color: #32666F;
 }
 
@@ -89,7 +89,7 @@ h2 {
 }
 
 .productCard {
-    width: 90%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
 
@@ -120,4 +120,8 @@ h2 {
     max-width: 700px;
     max-height: 700px;
 
+}
+
+a {
+    text-decoration: none;
 }

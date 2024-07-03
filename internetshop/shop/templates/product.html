@@ -7,10 +7,10 @@
         <h1>АнтиМаг</h1>
     </div>
 
-    <div class="nav">
-        <a href="/">Главная</a>
-        <a href="product">Продукция</a>
-        <a href="akchuya">Акция</a>
+    <div>
+        <a href="/" class="nav">Главная</a>
+        <a href="product" class="nav">Продукция</a>
+        <a href="akchuya" class="nav">Акция</a>
     </div>
 
 </div>
@@ -21,7 +21,7 @@
     <img  class="productImage" src="{{ product.image_url }}">
     <div class="productInfo">
         <h1>{{ product.name }}</h1>
-        <h3>{{ product.price }}</h3>
+        <h3>{{ product.price }} руб.</h3>
 
         <div class="but">
             <button>Беру!</button>
@@ -32,7 +32,7 @@
 </div>
 
 <div class="productDel">
-    <h1>Описание</h1>
+    <h1>Описание:</h1>
     <p>
         {{ product.descript }}
     </p>
