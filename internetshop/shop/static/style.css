@@ -89,7 +89,7 @@ h2 {
 }
 
 .productCard {
-    width: 70%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 
@@ -100,6 +100,7 @@ h2 {
 
 .productInfo {
     margin-left: 150px;
+    margin-top: 2%;
 
 }
 
@@ -111,6 +112,12 @@ h2 {
 
 .but {
     margin-left: 30%;
-    margin-top: 5%;
+    margin-top: 7%;
     text-align: center;
+}
+
+.productImage {
+    max-width: 700px;
+    max-height: 700px;
+
 }

@@ -15,17 +15,18 @@
 
 </div>
 
+
 <div class="productCard">
 
-    <img src="/static/ot.jpg">
+    <img  class="productImage" src="{{ product.image_url }}">
     <div class="productInfo">
-        <h1>Name</h1>
-        <h3>Price</h3>
-    </div>
+        <h1>{{ product.name }}</h1>
+        <h3>{{ product.price }}</h3>
 
-    <div class="but">
-        <button>Беру!</button><br>
-        <button>Пока ещё думаю...</button>
+        <div class="but">
+            <button>Беру!</button>
+        </div>
+
     </div>
 
 </div>
@@ -33,7 +34,7 @@
 <div class="productDel">
     <h1>Описание</h1>
     <p>
-        ...
+        {{ product.descript }}
     </p>
 </div>
 
