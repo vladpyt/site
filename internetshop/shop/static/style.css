@@ -17,7 +17,7 @@ img {
     border-radius: 10px;
     padding: 10px;
     background-color: white;
-    width: 1000px;
+    width: 1500px;
 
 }
 
@@ -25,12 +25,13 @@ img {
     display: flex;
     align-items: center;
     padding-bottom: 10px;
+    color: white;
 }
 
 a {
     margin-left: 30px;
     text-decoration: none;
-    color: white;
+    color: #a3a3a3;
     font-size: 22px;
 }
 
@@ -38,19 +39,22 @@ a:hover {
     color: #32666F;
 }
 
-.button {
+button {
      background-color: #9AA8AB;
+     color: black;
      border: none;
-     width: 50px;
-     height: 100px;
+     width: 100px;
+     height: 50px;
      padding: 0;
      border-radius: 10px;
      cursor: pointer;
+     font-size: 18px
 }
 
-.button:hover {
-    color: write;
+button:hover {
     background-color: #32666F;
+    color: white;
+    border: none;
 }
 
 h2 {
@@ -72,8 +76,9 @@ h2 {
 }
 
 .text {
-    width: 500px;
+    width: auto;
     height: 300px;
+    margin-left: 20px;
 
 }
 
