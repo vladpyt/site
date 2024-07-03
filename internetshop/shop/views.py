@@ -11,3 +11,6 @@ def home(request):
 
 def view_product(request):
     return render(request, "product.html")
+
+def akchuya(request):
+    return render(request, "akchuya.html")
