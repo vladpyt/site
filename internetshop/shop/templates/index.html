@@ -15,22 +15,25 @@
     </div>
 
 </div>
+
+
     {% for product in products %}
-<div class="productlist">
+    <div class="productlist">
 
-    <div class="product">
+        <div class="product">
+            <img src="{{  product.image_url  }}">
+            <div class="text">
+                <h2>{{ product.name }}</h2>
+                <p>{{ product.descript }}</p>
+            </div>
 
-        <img src="{{  product.image_url  }}">
-        <div class="text">
-            <h2>{{  product.name  }}</h2>
-            <p>{{  product.descript  }}</p>
-        </div>
-
-        <div class="priceSection">
-            <h3>{{  product.price }} pуб</h3>
-            <button>Беру!</button>
-            <button>Пока ещё думаю...</button>
+            <div class="priceSection">
+                <h3>{{ product.price }} pуб</h3>
+                <button>Беру!</button>
+                <button>Пока ещё думаю...</button>
+            </div>
         </div>
 
     </div>
     {% endfor %}
+
