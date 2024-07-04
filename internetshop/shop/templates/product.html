@@ -36,6 +36,43 @@
     <p>
         {{ product.descript }}
     </p>
+
+    <h1>Характеристика:</h1>
+
+    {% if product.weight %}
+    <div class="charRow">
+        <p>
+            Вес:
+        </p>
+        <p>
+            {{ product.weight }} грамм
+        </p>
+    </div>
+    {% endif %}
+
+    <div class="reviews">
+
+        {% for reviews in review %}
+        <div class="review">
+
+            <div class="reviewHeader">
+
+                <h2>{{ reviews.author }}</h2>
+                {% if reviews.rating == 1 %}
+                <h2 class="textGreen">Положительная</h2>
+                {% else %}
+                <h2 class="textRed">Отрицательная</h2>
+                {% endif %}
+
+            </div>
+            <p>
+                {{ reviews.text }}
+            </p>
+        </div>
+        {% endfor %}
+
+    </div>
+
 </div>
 
 
