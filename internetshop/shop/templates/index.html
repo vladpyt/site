@@ -1,5 +1,6 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'style.css' %}"/>
+<link rel="stylesheet" href="{% static 'styleCard.css' %}">
 
 
 <div class="heading">
@@ -18,22 +19,25 @@
 
 
     {% for product in products %}
-    <div class="productlist">
+    <div class="product-list">
 
-        <div class="product">
-            <img class="privyuPtoduct" src="{{  product.image_url  }}">
-            <div class="text">
-                <a href="product/1" class="nav">
-                    <h2>{{ product.name }}</h2>
-                </a>
-                <p>{{ product.descript }}</p>
+        <div class="product_Card">
+            <img class="product_image" src="{{  product.image_url  }}">
+            <a href="product/1" class="nav">
+                <h2>{{ product.name }}</h2>
+            </a>
+            <div class="product_text">
+
+                <!--p>{{ product.descript }}</p-->
+
+                <div class="priceSection">
+                    <h3>{{ product.price }} pуб</h3>
+                    <button>Беру!</button>
+                    <button>Пока ещё думаю...</button>
+                </div>
+
             </div>
 
-            <div class="priceSection">
-                <h3>{{ product.price }} pуб</h3>
-                <button>Беру!</button>
-                <button>Пока ещё думаю...</button>
-            </div>
         </div>
 
     </div>

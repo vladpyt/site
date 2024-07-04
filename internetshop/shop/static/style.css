@@ -57,7 +57,7 @@ button:hover {
     border: none;
 }
 
-h2 {
+.text-h2 {
     color: #32666F;
     font-size: 20px;
 }

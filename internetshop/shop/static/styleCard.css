@@ -1,0 +1,28 @@
+.product_Card {
+    height: auto;
+    width: auto;
+    background-color: #32666F;
+    border-radius: 10px;
+
+}
+
+.product_image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: cover;
+    max-width: 300px;
+    max-height: 300px;
+
+}
+
+.product_text {
+    width: 300px;
+    height: 100px;
+    font-size: 16px;
+}
+
+.product-list {
+    padding: 30px;
+    display: inline-block;
+}
