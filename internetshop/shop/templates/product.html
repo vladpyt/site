@@ -58,10 +58,21 @@
             <div class="reviewHeader">
 
                 <h2>{{ reviews.author }}</h2>
+
                 {% if reviews.rating == 1 %}
-                <h2 class="textGreen">Положительная</h2>
+                <h2 class="textGreen">1</h2>
+
+                {% elif reviews.rating == 2 %}
+                <h2 class="textGreen">2</h2>
+
+                {% elif reviews.rating == 3 %}
+                <h2 class="textGreen">3</h2>
+
+                {% elif reviews.rating == 4 %}
+                <h2 class="textGreen">4</h2>
+
                 {% else %}
-                <h2 class="textRed">Отрицательная</h2>
+                <h2 class="textGreen">5</h2>
                 {% endif %}
 
             </div>
