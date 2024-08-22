@@ -11,8 +11,8 @@
 
     <div>
         <a class="nav" href="/">Главная</a>
-        <a class="nav" href="product" >Продукция</a>
-        <a class="nav" href="akchuya" >Акция</a>
+        <a class="nav" href="/product" >Продукция</a>
+        <a class="nav" href="/akchuya" >Акция</a>
     </div>
 
 </div>
@@ -23,17 +23,17 @@
 
         <div class="product_Card">
             <img class="product_image" src="{{  product.image_url  }}">
-            <a href="product/1" class="nav">
-                <h2>{{ product.name }}</h2>
-            </a>
             <div class="product_text">
 
                 <!--p>{{ product.descript }}</p-->
 
                 <div class="priceSection">
                     <h3>{{ product.price }} pуб</h3>
+                    <a href="product/1" class="nav">
+                        <h2>{{ product.name }}</h2>
+                    </a>
                     <button>Беру!</button>
-                    <button>Пока ещё думаю...</button>
+                    <!--button>Пока ещё думаю...</button-->
                 </div>
 
             </div>
